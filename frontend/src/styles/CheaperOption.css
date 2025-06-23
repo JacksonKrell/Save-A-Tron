@@ -1,0 +1,246 @@
+.currentItemSection{
+    position: fixed;
+    margin: auto;
+    width: 360px;
+    padding-left: 30px;
+    height: 100vh;
+    padding-top: 130px;
+    margin-top: 70px;
+}
+
+.currentItemSection h1 { 
+    position: relative; 
+    width: 100%;
+    padding-bottom: 10px; 
+    padding-right: 30px;
+    text-align: center;
+} 
+
+.product-card-wishlist {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ECF0F1;
+    transition: 1s;
+}
+
+.product-card-wishlist, .product-card-wishlist img {
+    width: 300px;
+    position: relative; /* Position relative to allow absolute positioning of the heart */
+}
+
+.product-card-wishlist:hover {
+    transform:scale(1.2);
+    z-index: 2;
+}
+
+.product-image-wishlist {
+    height: 130px;
+    object-fit: contain;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.heart-icon {
+    font-size: 1.5rem; 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer; 
+    color: black; 
+}
+
+.heart-icon.added {
+    color: #FF0000; 
+}
+
+.product-name-wishlist {
+    font-size: 0.9rem;
+}
+
+.product-price-wishlist {
+    font-size: 1rem;
+}
+
+.product-text-wishlist {
+    padding: 10px;
+}
+
+.product-name-price-wishlist {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.product-price-wishlist {
+    font-weight: normal;
+}
+
+.product-link-wishlist {
+    text-decoration: none;
+    color: #003366;
+}
+
+.product-link-wishlist:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.compareItemSection {
+    position: absolute;
+    margin-top: 100px;
+    right: 0;
+    width: auto;
+    height: 100vh;
+    top: 0;
+}
+
+.compareItemSection h1 {
+    position: relative;
+    padding-left: 360px;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    color:white;
+}
+
+.cheaperListItem{
+    color:white;
+}
+
+.cheaperItems {
+    position: relative;
+    padding-left: 360px;
+    top: 70px;
+    width: 100vw;
+    display: grid;
+    padding-bottom: 40px;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items: center;
+    row-gap: 30px;
+    column-gap: 0;
+    padding-top: 10px;
+}
+
+.product-card-cheaper, .product-card-cheaper img {
+    width: 300px;
+    position: relative; /* Position relative to allow absolute positioning of the heart */
+}
+
+.product-card-cheaper {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ECF0F1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 5px;
+    transition: 1s;
+}
+
+.product-card-cheaper:hover {
+    transform:scale(1.2);
+    z-index: 2;
+}
+
+.heart-icon.added {
+    color: #FF0000; 
+}
+
+.product-name-wishlist {
+    font-size: 0.9rem;
+}
+
+.product-price-wishlist {
+    font-size: 1rem;
+}
+
+.cheaperImage{
+    height:100px;
+    width:100px;
+}
+
+@media only screen and (max-width: 3240px) {
+    .cheaperItems{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media only screen and (max-width: 2880px) {
+    .cheaperItems{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media only screen and (max-width: 2520px) {
+    .cheaperItems{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media only screen and (max-width: 2160px) {
+    .cheaperItems{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    .cheaperItems{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .cheaperItems{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .cheaperItems{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .cheaperItems {
+        padding-left: 0;
+        width: 100%;
+        top: 420px;
+        right: 0;
+    }
+
+    .compareItemSection {
+        justify-items: center;
+        width: 100%;
+    }
+
+    .compareItemSection h1 {
+        position: relative;
+        text-align: center;
+        padding-left: 0;
+        top: 400px;
+    }
+
+    .currentItemSection {
+        position: absolute;
+        z-index: 99;
+        justify-items: center;
+        padding-left: 0;
+        margin-top: 0;
+        width: 100%;
+        height: 350px;
+        background-color: #003366;
+    }
+
+    .currentItemSection h1 {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

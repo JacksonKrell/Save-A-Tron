@@ -1,0 +1,104 @@
+.body {
+    overflow-y: auto;
+}
+
+.login {
+    position: relative;
+    border-radius: 5px;
+    margin: auto;
+    width: 700px;
+    height: 450px;
+    top: 10vh;
+    background-color: #ecf0f1;
+}
+
+@media only screen and (max-width: 900px) {
+    .login {
+        width: 400px;
+
+        .forgot {
+            top: 63%;
+        }
+
+        .create {
+            left: 10%;
+            top: 71%;
+        }
+    }  
+}
+
+@media only screen and (max-width: 425px) {
+    .login {
+        width: 320px;
+    } 
+}
+
+.loginTextHeader {
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+    text-wrap: wrap;
+    color:black;
+}
+
+.email {
+    background-color: #d9d9d9;
+    position: absolute;
+    font-size: 20px;
+    padding: 8px;
+    left: 10%;
+    top: 25%;
+    width: 80%;
+    height: 50px;
+}
+
+.password {
+    background-color: #d9d9d9;
+    position: absolute;
+    font-size: 20px;
+    padding: 8px;
+    left: 10%;
+    top: 45%;
+    width: 80%;
+    height: 50px;
+}
+
+.forgot {
+    color: #003366;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+.forgot:hover .create:hover{
+    color: #004487;
+}
+
+.create {
+    color: #003366;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+}
+
+.button {
+    background-color: #003366;
+    padding: 12px 5px 5px 5px;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    height: 50px;
+    top: 80%;
+    left: 10%;
+    border-radius: 100px;
+    color: white;
+}
+
+.button:hover {
+    background-color: #004487;
+}
+
+.login-error-message {
+    text-align: center;
+    color: red;
+}

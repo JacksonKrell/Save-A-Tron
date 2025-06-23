@@ -1,0 +1,57 @@
+* {
+    color: #333333;
+}
+.filters {
+    width: 90vw;
+    background-color: #ECF0F1;
+    padding: 10px;
+    margin: auto;
+    gap: 20px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+td {
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 1200px) {
+    .filters{
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .filters{
+        width: 90vw;
+    }
+}
+
+.filter-category-header {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.filter-item {
+    margin: 5px;
+    font-size: 12px;
+}
+
+.filter-item input {
+    margin-right: 10px;
+}
+
+button {
+    color: #003366;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+button:hover {
+    cursor: pointer;
+}
